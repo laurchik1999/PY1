@@ -1,9 +1,4 @@
-src = not False and True or False and not True
+from pprint import pprint
 
-# TODO расписать упрощение выражения
-
-result = True and True or False and False
-result = True or False
-result = True
-
-print(src == result)
+c = 16
+pprint([{'bin': bin(i), 'dec': i, 'hex': hex(i), 'oct': oct(i)} for i in range(c)])
