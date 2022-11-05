@@ -1,8 +1,6 @@
 def delete(list_, index=None):
     if index == None:
-        for i, x in enumerate(list_):
-            if list_.count(x) > 1:
-                index = i
+        index = len(list_) - 1
     copy_list = list_[:index] + list_[index+1:]
     return copy_list
 
